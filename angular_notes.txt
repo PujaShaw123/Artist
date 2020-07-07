@@ -1,0 +1,8 @@
+
+open visual studio
+Download node.js
+
+
+npm install -g @angular/cli
+
+ng new learnangular5
