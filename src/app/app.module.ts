@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import{FormsModule} from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { from } from 'rxjs';
+import { ArtistItemsComponent } from './artist-items/artist-items.component';
+import { SearchArtistPipe } from './search-artist.pipe';
+import { ArtistDetailsComponent } from './artist-details/artist-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArtistItemsComponent,
+    SearchArtistPipe,
+    ArtistDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

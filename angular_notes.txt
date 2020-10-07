@@ -6,3 +6,6 @@ Download node.js
 npm install -g @angular/cli
 
 ng new learnangular5
+
+How to create a  component?
+ng create component name
